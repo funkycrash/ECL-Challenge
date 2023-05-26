@@ -92,7 +92,7 @@ function getHighestRecords (records, count) {
   return records
     .sort((a, b) => b.score - a.score)
     .slice(0, count)
-    .map(record => ({ score: record.score, record: record.record.id }))
+    .map(record => ({ score: record.score, id: record.record.id }))
 }
 
 /**
